@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const e = require('express');
 const geoCode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-
+const port = procces.env.PORT || 3000;
 /** app cinfig */
 const app = express();
 const publicDirectory = path.join(__dirname, '../public');
@@ -96,6 +96,6 @@ app.get('*', (req, res) => {
 });
 
 /** start */
-app.listen(3000, () => {
-    console.log('Server is running on 3000')
+app.listen(port, () => {
+    console.log('Server is running on' + port)
 });

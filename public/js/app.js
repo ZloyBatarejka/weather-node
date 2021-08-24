@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorContainer.innerHTML = 'Provide value';
             return;
         }
-        fetch(`http://localhost:3000/weather?adress=${location}`)
+        fetch(`/weather?adress=${location}`)
         .then((data) => {
             data.json().then((data) => {
                 if (data.error) {
