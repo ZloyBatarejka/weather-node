@@ -1,0 +1,50 @@
+body {
+    color: #333336;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+header {
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+header h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+header ul a {
+    color: #333336;
+    text-decoration: none;
+}
+
+.portrait {
+    height: 320px;
+}
+
+.WeatherContainer {
+    margin: 20px 0;
+}
+.WeatherContainer .WeatherContainer-error {
+    color: red;
+}
