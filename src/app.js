@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const e = require('express');
 const geoCode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-const port = procces.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 /** app cinfig */
 const app = express();
 const publicDirectory = path.join(__dirname, '../public');
